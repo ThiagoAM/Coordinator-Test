@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-ZN-W9r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH1-iD-7Oe">
+                                <rect key="frame" x="173" y="188" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEh-22-Oj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7h-E3-t4l">
+                                <rect key="frame" x="134" y="289" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2UC-hd-82d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PyR-ZN-W9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DhY-jR-ihH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PyR-ZN-W9r" secondAttribute="trailing" id="JaL-9U-yG7"/>
+                            <constraint firstItem="PyR-ZN-W9r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aiq-kc-SU0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="QMW-fe-Sce">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewController" id="1Mw-yx-yXL" customClass="BuyViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TPw-vA-xGw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtM-pK-onp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wtM-pK-onp" firstAttribute="top" secondItem="m2K-Xs-dl3" secondAttribute="top" id="BDq-LS-Yzh"/>
+                            <constraint firstItem="m2K-Xs-dl3" firstAttribute="trailing" secondItem="wtM-pK-onp" secondAttribute="trailing" id="L1t-Ic-w9l"/>
+                            <constraint firstItem="m2K-Xs-dl3" firstAttribute="bottom" secondItem="wtM-pK-onp" secondAttribute="bottom" id="L2I-sy-C9I"/>
+                            <constraint firstItem="wtM-pK-onp" firstAttribute="leading" secondItem="m2K-Xs-dl3" secondAttribute="leading" id="rXu-VA-7JJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m2K-Xs-dl3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJf-RH-cfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="139"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="owp-zz-4a4">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" id="KJ9-hM-Lgr" customClass="CreateAccountViewController" customModule="CoordinatorTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXK-Rj-l0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2I-y9-dId">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KhS-Jb-S5S" firstAttribute="bottom" secondItem="Q2I-y9-dId" secondAttribute="bottom" id="42e-cd-Kht"/>
+                            <constraint firstItem="Q2I-y9-dId" firstAttribute="top" secondItem="KhS-Jb-S5S" secondAttribute="top" id="4YB-ay-zRt"/>
+                            <constraint firstItem="KhS-Jb-S5S" firstAttribute="trailing" secondItem="Q2I-y9-dId" secondAttribute="trailing" id="B0r-xO-1kx"/>
+                            <constraint firstItem="Q2I-y9-dId" firstAttribute="leading" secondItem="KhS-Jb-S5S" secondAttribute="leading" id="dR1-7b-dAs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KhS-Jb-S5S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdS-vK-gVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="139"/>
+        </scene>
+    </scenes>
+</document>
